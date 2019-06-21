@@ -1,0 +1,37 @@
+import numpy as np
+import pandas as pd
+from pandas import  Series,DataFrame
+
+excelfile=pd.ExcelFile('assignment.xlsx')
+df1=excelfile.parse('Sheet1',header=0)
+df2=excelfile.parse('Sheet2',header=0)
+df3=excelfile.parse('Sheet3',header=0)
+df4=excelfile.parse('Sheet4',header=0)
+df5=excelfile.parse('Sheet5',header=0)
+df6=excelfile.parse('Sheet6',header=0)
+df7=excelfile.parse('Sheet7',header=0)
+df8=excelfile.parse('Sheet8',header=0)
+df9=excelfile.parse('Sheet9',header=0)
+df10=excelfile.parse('Sheet10',header=0)
+print(df1)
+print(df2)
+print(df3)
+print(df4)
+print(df5)
+print(df6)
+print(df7)
+print(df8)
+print(df9)
+print(df10)
+df1.to_csv('output1.csv')
+df2.to_csv('output2.csv')
+df3.to_csv('output3.csv')
+df4.to_csv('output4.csv')
+df5.to_csv('output5.csv')
+df6.to_csv('output6.csv')
+df7.to_csv('output7.csv')
+df8.to_csv('output8.csv')
+df9.to_csv('output9.csv')
+df10.to_csv('output10.csv')
+
+
